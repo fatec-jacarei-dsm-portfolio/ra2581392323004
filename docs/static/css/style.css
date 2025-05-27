@@ -29,7 +29,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('../imgs/galaxia.png') no-repeat center center;
+    background: url('../imgs/firsImage.png') no-repeat center center;
     /* Alinha a imagem */
     background-size: cover;
     /* Garante que a imagem cobre toda a tela */
@@ -60,7 +60,11 @@ html {
     /* Colocado acima do gradiente */
     text-align: center;
 }
-
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
 #inicio h1 {
     font-size: 3rem;
     /* Tamanho do título */
