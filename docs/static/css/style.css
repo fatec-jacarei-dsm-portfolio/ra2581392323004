@@ -647,14 +647,9 @@ h2 {
     scrollbar-color: #888 #f1f1f1;
 }
 
-.carrossel::-webkit-scrollbar {
-    height: 8px;
-}
 
-.carrossel::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-}
+
+ 
 
 .carrossel::-webkit-scrollbar-thumb:hover {
     background-color: #555;
@@ -665,43 +660,26 @@ h2 {
     border-radius: 10px;
 }
 
-.projeto-card {
-    flex: 0 0 calc(30% - 20px);
-    /* Espaçamento dinâmico entre os cards */
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.projeto-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
 .projeto-imagem {
-    width: 100%;
-    height: 350px;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  max-height: 400px; /* ou ajuste conforme seu design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
-.projeto-card h3 {
-    margin: 10px 0 5px;
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
+.projeto-imagem img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;  /* mostra a imagem inteira sem cortar */
+  display: block;
 }
 
-.projeto-card p {
-    margin: 5px 10px 15px;
-    color: #555;
-    font-size: 0.95em;
-    line-height: 1.4;
-}
+
 
 .descricao-projeto {
     margin-top: 20px;
@@ -749,14 +727,12 @@ h2 {
 
 /* Estilo geral do carrossel */
 .carrossel {
-    display: flex;
-    gap: 20px;
-    scroll-behavior: smooth;
-    width: 100%;
-    padding: 10px 0;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .carrossel::-webkit-scrollbar {
@@ -792,12 +768,36 @@ h2 {
     transform: scale(1.05);
 }
 
-.publicacao-imagem {
+/* .publicacao-imagem {
     width: 100%;
-    height: 250px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    padding: 15px;
+    background-color: #fff;
     background-size: cover;
     background-position: center;
+} */
+.publicacao-imagem {
+  width: 100%;
+  max-height: 20000px;        /* limite de altura, sem cortar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
 }
+
+.publicacao-imagem img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;       /* garante exibição completa da imagem */
+  display: block;
+}
+
 
 .publicacao-card h3 {
     margin: 10px 0 5px;
@@ -826,7 +826,7 @@ h2 {
 }
 
 .descricao-publicacao-expandida {
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 8px;
     text-align: left;
     transition: background-color 0.3s ease-in-out;
@@ -1054,3 +1054,74 @@ h2 {
         height: 2300px;
     }
 }
+/* RESPONSIVIDADE PARA CARDS DE PROJETO E PUBLICAÇÃO */
+@media screen and (max-width: 600px) {
+  .projeto-card,
+  .publicacao-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+    min-width: 250px;
+    margin: 0 auto;
+  }
+  .projeto-imagem,
+  .publicacao-imagem {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+  .projeto-card h3,
+  .publicacao-card h3 {
+    font-size: 1.1rem;
+  }
+  .projeto-card p,
+  .publicacao-card p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    text-align: left;
+    word-break: break-word;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projeto-card,
+  .publicacao-card {
+    flex: 0 0 95%;
+    max-width: 95%;
+  }
+  .projeto-imagem,
+  .publicacao-imagem {
+    height: 160px;
+  }
+  .projeto-card p,
+  .publicacao-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* AJUSTES EXTRAS PARA EVITAR CORTES DE IMAGEM E TEXTO */
+.projeto-card,
+.publicacao-card {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    /* Três cartões lado a lado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+/* CENTRALIZAÇÃO DO LINK "Visite o projeto" */
+.descricao-publicacao-expandida a,
+.descricao-projeto-expandida a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+
