@@ -678,7 +678,10 @@ h2 {
   object-fit: contain;  /* mostra a imagem inteira sem cortar */
   display: block;
 }
-
+.projeto-imagem h3{
+justify-content: justify;
+  align-items: justify;
+}
 
 
 .descricao-projeto {
@@ -704,7 +707,7 @@ h2 {
 }
 
 .descricao-projeto-expandida h3 {
-    text-align: center;
+    text-align: justify;
 }
 
 .descricao-projeto-expandida a {
@@ -753,20 +756,8 @@ h2 {
     border-radius: 10px;
 }
 
-.publicacao-card {
-    flex: 0 0 calc(30% - 20px);
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
 
-.publicacao-card:hover {
-    transform: scale(1.05);
-}
+
 
 /* .publicacao-imagem {
     width: 100%;
@@ -782,20 +773,22 @@ h2 {
     background-position: center;
 } */
 .publicacao-imagem {
-  width: 100%;
-  max-height: 20000px;        /* limite de altura, sem cortar */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0; /* Remove espaço extra */
 }
 
 .publicacao-imagem img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;       /* garante exibição completa da imagem */
-  display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 
