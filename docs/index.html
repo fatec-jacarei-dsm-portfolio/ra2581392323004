@@ -10,10 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .projeto-card,
+        .publicacao-card,
+        .menu-icon {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body background="./static/imgs/firsImage.png">
-<!-- INÍCIO DO CONTEÚDO INTEGRADO -->
 <header>
     <nav class="nav-links">
         <a class="left-link" href="#inicio">Samuel</a>
@@ -34,7 +41,6 @@
         </div>
     </nav>
 </header>
-<!-- FIM DO CONTEÚDO INTEGRADO -->
 <section id="inicio">
         <div class="gradient-overlay"></div>
         <div class="center-text">
@@ -220,7 +226,7 @@ de Área Queimada.<br>Pesquisador de Iniciação Ciêntifica - CNPq</p>
         </div>
     </section>
 
-    <div id="descricao-detalhes" style="display: none;">
+    <div id="descricao-detalhes-fatec" style="display: none;">
         <div id="desc-fatec1">
             <h3>Primeiro Semestre</h3>
             <p>
@@ -285,7 +291,6 @@ de Área Queimada.<br>Pesquisador de Iniciação Ciêntifica - CNPq</p>
             <a href="https://github.com/InnoCodeSolutions/ABP_4DSM" target="_blank">Visite o projeto</a>
         </div>
     </div>
-<!-- CONTINUAÇÃO DO DOCUMENTO EXISTENTE -->
 <section id="publicacoes" class="section">
     <h2>Publicações</h2>
     <div class="carrossel">
@@ -473,7 +478,8 @@ de Área Queimada.<br>Pesquisador de Iniciação Ciêntifica - CNPq</p>
     }
 
     handleCardClick('.projeto-card', '.descricao-projeto-expandida', 'descricao-detalhes');
-    handleCardClick('.publicacao-card[data-descricao-id^="desc-fatec"]', '.descricao-publicacao-expandida', 'descricao-detalhes');
+    // CORRIGIDO: A chamada agora aponta para o ID único 'descricao-detalhes-fatec'
+    handleCardClick('.publicacao-card[data-descricao-id^="desc-fatec"]', '#projetos-fatec .descricao-publicacao-expandida', 'descricao-detalhes-fatec');
     handleCardClick('.publicacao-card[data-descricao-id^="publicacoes"]', '#publicacoes .descricao-publicacao-expandida', 'descricao-publicacoes');
 </script>
 </body>
