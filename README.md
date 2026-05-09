@@ -13,6 +13,7 @@
 |---|---|
 | 🌐 **Portfólio Online** | [fatec-jacarei-dsm-portfolio.github.io/ra2581392323004](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392323004/) |
 | 🎤 **Pitch de Apresentação** | [Assistir no YouTube](https://youtu.be/URVQ-a4LmR0) |
+| 🎓 **Apresentação Final do Portfólio** | [Assistir no YouTube](https://youtu.be/I7pdLXgBFR8) |
 | 💼 **GitHub** | [github.com/SamuelLucasVieira](https://github.com/SamuelLucasVieira) |
 | 📄 **Lattes CNPq** | [Currículo Lattes](http://lattes.cnpq.br/9911664323768766) |
 
@@ -79,6 +80,7 @@ ISBN: 978-65-272-1985-9
 
 - 🟦 **Google Cloud Computing Foundations** — Google Cloud · Nov 2025
 - 📄 **3º Science & Business Connection** — Trabalho científico apresentado · 2025
+- 🔥 **Programa Queimadas não Queimam** — INPE · 2024–2025
 - 🗺️ **Oficina: Base de Informações Georreferenciadas** — INPE / Brazil Data Cube · 50h · 2024
 - 🎨 **UX Básico** — FATEC · 240h · 2024
 - 💻 **Design Patterns Básico** — FATEC · 240h · 2024
