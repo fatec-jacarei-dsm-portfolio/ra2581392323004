@@ -432,8 +432,8 @@ header{
 }
 .projeto-card:hover{background:var(--bg-card-h);border-color:rgba(124,58,237,.4);transform:translateY(-4px);box-shadow:var(--shadow-h);}
 
-.projeto-imagem{width:100%;height:180px;display:flex;justify-content:center;align-items:center;overflow:hidden;background:rgba(255,255,255,.03);}
-.projeto-imagem img{width:100%;height:100%;object-fit:contain;}
+.projeto-imagem{width:100%;height:clamp(140px,25vw,180px);display:flex;justify-content:center;align-items:center;overflow:hidden;background:rgba(255,255,255,.03);}
+.projeto-imagem img{width:100%;height:100%;object-fit:contain;max-width:100%;}
 
 .projeto-card h3{font-size:clamp(.82rem,1.6vw,.97rem);color:var(--text-hi);font-weight:700;padding:14px 16px 6px;line-height:1.3;}
 .projeto-card p{font-size:clamp(.72rem,1.4vw,.84rem);color:var(--text-md);padding:0 16px 16px;line-height:1.5;}
@@ -451,8 +451,8 @@ header{
 }
 .publicacao-card:hover{background:var(--bg-card-h);border-color:rgba(124,58,237,.4);transform:translateY(-4px);box-shadow:var(--shadow-h);}
 
-.publicacao-imagem{width:100%;height:150px;display:flex;justify-content:center;align-items:center;overflow:hidden;background:rgba(255,255,255,.03);flex-shrink:0;}
-.publicacao-imagem img{width:100%;height:100%;object-fit:cover;}
+.publicacao-imagem{width:100%;height:clamp(120px,22vw,150px);display:flex;justify-content:center;align-items:center;overflow:hidden;background:rgba(255,255,255,.03);flex-shrink:0;}
+.publicacao-imagem img{width:100%;height:100%;object-fit:cover;max-width:100%;}
 
 .publicacao-card h3{font-size:clamp(.8rem,1.5vw,.93rem);color:var(--text-hi);font-weight:700;padding:12px 14px 4px;line-height:1.3;}
 .publicacao-card p{font-size:clamp(.7rem,1.3vw,.82rem);color:var(--text-md);padding:0 14px 14px;line-height:1.45;}
@@ -584,6 +584,9 @@ header{
    ============================================================ */
 @media(max-width:480px){
   .section{padding:80px 16px 60px;}
-  .projeto-card,.publicacao-card{flex:0 0 85%;}
+  .projeto-card,.publicacao-card{flex:0 0 88%;}
   .complementar-item{max-width:100%;}
+  .projeto-imagem{height:clamp(130px,40vw,170px);}
+  .publicacao-imagem{height:clamp(110px,35vw,150px);}
+  .pub-badge-mdpi,.pub-badge-congress,.pub-card-mentora,.pub-card-procon{height:clamp(110px,35vw,150px);}
 }
