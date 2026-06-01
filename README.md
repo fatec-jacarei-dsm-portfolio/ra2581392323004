@@ -3,7 +3,7 @@
 **RA:** 2581392323004  
 **Curso:** Tecnologia em Desenvolvimento de Software Multiplataforma  
 **Instituição:** FATEC Professor Francisco de Moura — Jacareí, SP  
-**Semestre atual:** 6º Semestre (2025/2)
+**Semestre atual:** 6º Semestre (2026/1)
 
 ---
 
@@ -65,14 +65,14 @@ ISBN: 978-65-272-1985-9
 
 ## 📁 Projetos Fatec (ABP)
 
-| Semestre | Projeto | Equipe | Repositório |
-|---|---|---|---|
-| 1º (2023/2) | Plataforma Educacional SCRUM | Equipe Fatec | [API-1DSM-2023](https://github.com/Team-The-Code/API-1DSM-2023) |
-| 2º (2024/1) | Sistema Web de Mapeamento Geoespacial | The Code | [API-2DSM-2024](https://github.com/Team-The-Code/API-2DSM-2024) |
-| 3º (2024/2) | App de Monitoramento Nutricional | InnoCodeSolutions | [ABP_3](https://github.com/InnoCodeSolutions/ABP_3) |
-| 4º (2024/2) | App de Monitoramento IoT | InnoCodeSolutions | [ABP_4DSM](https://github.com/InnoCodeSolutions/ABP_4DSM) |
-| 5º (2025/1) | **Mentora** — Plataforma de ML para Apoio Acadêmico | InnoCodeSolutions | [abp_5dsm](https://github.com/innocode-solutions/abp_5dsm) |
-| 6º (2025/2) | **ProconBot Jacareí** — Chatbot RAG/PLN via WhatsApp *(em dev.)* | InnoCodeSolutions | [abp_6dsm](https://github.com/innocode-solutions/abp_6dsm) |
+| Semestre | Projeto | Cargo | Equipe | Repositório |
+|---|---|---|---|---|
+| 1º (2023/2) | Plataforma Educacional SCRUM | Scrum Master | Equipe Fatec | [API-1DSM-2023](https://github.com/Team-The-Code/API-1DSM-2023) |
+| 2º (2024/1) | Sistema Web de Mapeamento Geoespacial | Desenvolvedor Full Stack | The Code | [API-2DSM-2024](https://github.com/Team-The-Code/API-2DSM-2024) |
+| 3º (2024/2) | App de Monitoramento Nutricional — RAMG.O | Product Owner | InnoCodeSolutions | [ABP_3](https://github.com/InnoCodeSolutions/ABP_3) |
+| 4º (2025/1) | App de Monitoramento IoT — floatData | Desenvolvedor Full Stack | InnoCodeSolutions | [ABP_4DSM](https://github.com/InnoCodeSolutions/ABP_4DSM) |
+| 5º (2025/2) | **Mentora** — Plataforma de ML para Apoio Acadêmico | Desenvolvedor Full Stack | InnoCodeSolutions | [abp_5dsm](https://github.com/innocode-solutions/abp_5dsm) |
+| 6º (2026/1) | **ProconBot Jacareí** — Chatbot RAG/PLN via WhatsApp | Desenvolvedor Full Stack | InnoCodeSolutions | [abp_6dsm](https://github.com/innocode-solutions/abp_6dsm) |
 
 ---
 
@@ -91,14 +91,15 @@ ISBN: 978-65-272-1985-9
 ## 🛠️ Estrutura do Repositório
 
 ```
-ra2581392323004-main/
-├── index.html              # Página principal do portfólio
-├── README.md               # Este arquivo
-└── static/
-    ├── css/
-    │   └── style.css       # Estilos (dark mode, glassmorphism, responsivo)
-    ├── imgs/               # Imagens gerais (hero, perfil, logos)
-    └── academic/           # Imagens dos projetos Fatec por semestre
+ra2581392323004/
+├── docs/
+│   ├── index.html              # Página principal do portfólio
+│   └── static/
+│       ├── css/
+│       │   └── style.css       # Estilos (dark mode, glassmorphism, responsivo)
+│       ├── imgs/               # Imagens gerais (hero, perfil, logos)
+│       └── academic/           # Imagens dos projetos Fatec por semestre
+└── README.md                   # Este arquivo
 ```
 
 ---
@@ -117,4 +118,4 @@ O portfólio foi construído com **HTML, CSS e JavaScript** puros, sem framework
 
 ---
 
-*Portfólio desenvolvido como requisito do curso de DSM — FATEC Jacareí · 2025*
+*Portfólio desenvolvido como requisito do curso de DSM — FATEC Jacareí · 2026*

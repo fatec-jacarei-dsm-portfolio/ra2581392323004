@@ -569,7 +569,7 @@ header{
 /* ============================================================
    CONTATO
    ============================================================ */
-.redes{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px;}
+.redes{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px;width:100%;}
 .redes a{
   font-size:1.8rem;color:var(--text-md);
   width:56px;height:56px;border-radius:50%;
