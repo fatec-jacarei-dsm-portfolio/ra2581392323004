@@ -67,7 +67,7 @@ ISBN: 978-65-272-1985-9
 
 | Semestre | Projeto | Cargo | Equipe | Repositório |
 |---|---|---|---|---|
-| 1º (2023/2) | Plataforma Educacional SCRUM | Scrum Master | Equipe Fatec | [API-1DSM-2023](https://github.com/Team-The-Code/API-1DSM-2023) |
+| 1º (2023/2) | Plataforma Educacional SCRUM | Scrum Master | The Code | [API-1DSM-2023](https://github.com/Team-The-Code/API-1DSM-2023) |
 | 2º (2024/1) | Sistema Web de Mapeamento Geoespacial | Desenvolvedor Full Stack | The Code | [API-2DSM-2024](https://github.com/Team-The-Code/API-2DSM-2024) |
 | 3º (2024/2) | App de Monitoramento Nutricional — RAMG.O | Product Owner | InnoCodeSolutions | [ABP_3](https://github.com/InnoCodeSolutions/ABP_3) |
 | 4º (2025/1) | App de Monitoramento IoT — floatData | Desenvolvedor Full Stack | InnoCodeSolutions | [ABP_4DSM](https://github.com/InnoCodeSolutions/ABP_4DSM) |
