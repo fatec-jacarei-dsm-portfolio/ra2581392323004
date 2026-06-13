@@ -13,7 +13,7 @@
 |---|---|
 | 🌐 **Portfólio Online** | [fatec-jacarei-dsm-portfolio.github.io/ra2581392323004](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392323004/) |
 | 🎤 **Pitch de Apresentação** | [Assistir no YouTube](https://youtu.be/URVQ-a4LmR0) |
-| 🎓 **Apresentação Final do Portfólio** | [Assistir no YouTube]([https://youtu.be/I7pdLXgBFR8](https://youtu.be/L7F7CwkHJBY)) |
+| 🎓 **Apresentação Final do Portfólio** | [https://youtu.be/I7pdLXgBFR8](https://youtu.be/L7F7CwkHJBY) |
 | 💼 **GitHub** | [github.com/SamuelLucasVieira](https://github.com/SamuelLucasVieira) |
 | 📄 **Lattes CNPq** | [Currículo Lattes](http://lattes.cnpq.br/9911664323768766) |
 
